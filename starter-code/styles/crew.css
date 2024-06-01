@@ -1,0 +1,236 @@
+body {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* --- Header --- */
+.header-crew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ; 
+    padding: 1.5rem;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: var(--white);
+}
+
+.crew-img {
+    display: block;
+    width: 177px;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.crew-dots-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-line {
+    width: 327px;
+    height: 1px;
+    border: 1px solid var(--darkGray);
+}
+
+.crew-dots {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 88px;
+    height: 10px;
+    margin-top: 2rem;
+}
+
+.crew-dots li {
+    list-style: none;
+}
+
+.commander {
+    margin-top: 2rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+p {
+    color: var(--lightPurple);
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        height: 100%;
+    }
+
+    .header-crew {
+        padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    .header-title {
+        width: 100%;
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 24px;
+        letter-spacing: 3.38px;
+        text-align: left !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between ; 
+    }
+    .about-crew {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between ; 
+    }
+    
+    .hr-line {
+        display: none;
+    }
+
+    .crew-img {
+        width: 446px;
+        height: 560px;
+        margin-top: 2.5rem;
+
+    }
+
+    .commander {
+        font-size:1.5rem;
+        line-height: 27.5px;
+        margin-top: 3.75rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 28px;
+        width: 458px;
+        height: 84px;
+    }
+
+    .crew-dots {
+        margin-top: 2.5rem;
+        width: 88px;
+        height: 10px;
+    }
+}
+
+/* --- Media Queries --- */
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+        height: 100%;
+    }
+
+    .header-crew {
+        padding: 4.75rem 8.56rem 0 10.5rem;
+    }
+
+    .header-title {
+        font-size: 1.75rem;
+        line-height: 33px;
+        letter-spacing: 4.72px;
+    }
+
+    .commander {
+        font-size: 2rem;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        line-height: 64px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.7rem;
+        line-height: 32px;
+        width: 444px;
+        height: 160px;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between ; 
+    }
+
+    .crew-img {
+        width: 568px;
+        height: 712px;
+        margin-top: 0;
+    }
+
+    .crew-dots-container {
+        margin: 0;
+        width: 100%;
+       display: block;
+
+
+    }
+
+    .crew-dots {
+        width: 132px;
+        height: 16px;
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 7.5rem;
+    }
+}
+

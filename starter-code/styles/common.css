@@ -1,0 +1,162 @@
+/* --- Reset --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --lightPurple: #D0D6F9;
+    --darkGray: #383B4B;
+}
+
+
+/* --- Nav --- */
+
+.navbar {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.hamburger-menu {
+    position: fixed;
+    margin: 1.5rem;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 21px;
+    z-index: 999;
+}
+
+/* --- Overlay --- */
+
+.navbar-overlay {
+    display: none;
+    position: fixed;
+    padding:5rem 2rem;
+    top: 0;
+    right: 0;
+    left: 35%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    z-index: 998;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#menu-close {
+    display: none;
+    width: 24px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.75rem;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-text {
+margin-top: 3rem;
+}
+
+.menu-text li {
+    margin-bottom: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-text li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu-text li a span {
+    margin-right: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* --- Overlay --- */
+    
+    .menu-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-text li {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu-text li a {
+        padding: 1.5rem;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .hide-span {
+        display: none;
+    }
+
+    .navbar-overlay {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 96px !important;
+        max-height: 96px !important;
+        max-width: 640px;
+        padding: 0;
+        border: none;
+
+    }
+    
+    .hamburger-menu, #menu-close {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* --- Overlay --- */
+
+    .navbar-overlay {
+        width: 830px;
+        height: 96px;
+}
+    
+    .hide-span {
+        display: block;
+    }
+
+}
