@@ -33,7 +33,10 @@ const checkScreenSize = () => {
         navbarOverlay.style.display = 'none'; // Hide sidebar on mobile
         hamburgerMenu.style.display = 'block';
     }
+
+
 };
+
 
 // Attach resize event listener
 window.addEventListener('resize', checkScreenSize);
