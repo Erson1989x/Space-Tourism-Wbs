@@ -68,6 +68,17 @@ body {
 
 }
 
+.big-dot{
+    font-family: "Bellefair", serif;
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.big-dot:hover {
+    color: var(--black);
+}
+
 .big-dot:hover {
     border: 2px solid var(--white);
     color: var(--darkGray);
@@ -87,6 +98,7 @@ body {
 
 
 h1 {
+    font-family: "Bellefair", serif;
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 400;
@@ -137,6 +149,7 @@ p {
     .big-dot {
         width: 60px;
         height: 60px;
+        font-size: 1.25rem;
     }
 
     .vehicle-text {
@@ -220,6 +233,7 @@ p {
     .big-dot {
         width: 80px;
         height: 80px;
+        font-size: 2rem;
     }
 
     .vehicle-title {
