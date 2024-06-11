@@ -33,11 +33,11 @@
     </div>
   </nav>
 
-  <header class="header">
+  <header class="header" id="destinations" data-destination = "Europa">
     <h2><span>01</span> Pick your destination</h2>
     <div class="container">
     <div class="moon-img-container">
-      <img class="moon-img" src="./assets/destination/image-europa.png" alt="">
+      <img class="moon-img" id="destination-img" src="" alt="">
     </div>
     <div>
       <div>
@@ -48,27 +48,25 @@
           <li><a href="destination-titan.html">Titan</a></li>
         </ul>
       </div>
-      <h1>Europa</h1>
-      <p> The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-        winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-        ice skating, curling, hockey, or simple relaxation in your snug 
-        wintery cabin.</p>
+      <h1 id="destination-name"></h1>
+      <p id="destination-description"></p>
         <hr class="hr-line">
       <ul class="destination-info">
         <li>
           <span><strong>Avg. distance</strong></span>
-          <span class="destination-distance">628 mil. km</span>
+          <span class="destination-distance" id="destination-distance-planets"></span>
         </li>
         <li>
           <span><strong>Est. travel time</strong></span>
-          <span class="destination-distance">3 years</span>
+          <span class="destination-distance" id="destination-travel"></span>
         </li>
       </ul>
       
     </div>
   </div>
   </header>
-
+  
+  <script src="./script/data.js"></script>
   <script src="./script/index.js"></script>
 </body>
 </html>

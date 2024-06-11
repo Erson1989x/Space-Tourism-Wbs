@@ -32,11 +32,11 @@
     </div>
   </nav>
 
-  <header class="header">
+  <header class="header" id="destinations" data-destination = "Moon">
     <h2><span>01</span> Pick your destination</h2>
     <div class="container">
     <div class="moon-img-container">
-      <img class="moon-img" src="./assets/destination/image-moon.png" alt="">
+      <img class="moon-img" id="destination-img" src="" alt="">
     </div>
     <div>
       <div>
@@ -47,19 +47,17 @@
           <li><a href="destination-titan.html">Titan</a></li>
         </ul>
       </div>
-      <h1>Moon</h1>
-      <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-        regain perspective and come back refreshed. While you’re there, take in some history 
-        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      <h1 id="destination-name"></h1>
+      <p id="destination-description"></p>
         <hr class="hr-line">
       <ul class="destination-info">
         <li>
           <span><strong>Avg. distance</strong></span>
-          <span class="destination-distance">384,400 km</span>
+          <span class="destination-distance" id="destination-distance-planets"></span>
         </li>
         <li>
           <span><strong>Est. travel time</strong></span>
-          <span class="destination-distance">3 days</span>
+          <span class="destination-distance" id="destination-travel"></span>
         </li>
       </ul>
       
@@ -67,6 +65,7 @@
   </div>
   </header>
 
+  <script src="./script/data.js"></script>
   <script src="../starter-code/script/index.js"></script>
 </body>
 </html>

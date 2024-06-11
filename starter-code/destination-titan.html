@@ -34,11 +34,11 @@
     </div>
   </nav>
 
-  <header class="header">
+  <header class="header" id="destinations" data-destination = "Titan">
     <h2><span>01</span> Pick your destination</h2>
     <div class="container">
     <div class="moon-img-container">
-      <img class="moon-img" src="./assets/destination/image-titan.png" alt="">
+      <img class="moon-img" id="destination-img" src="" alt="">
     </div>
     <div>
       <div>
@@ -49,26 +49,25 @@
           <li><a href="destination-titan.html">Titan</a></li>
         </ul>
       </div>
-      <h1>Titan</h1>
-      <p>The only moon known to have a dense atmosphere other than Earth, Titan 
-        is a home away from home (just a few hundred degrees colder!). As a 
-        bonus, you get striking views of the Rings of Saturn.</p>
+      <h1 id="destination-name"></h1>
+      <p id="destination-description"></p>
         <hr class="hr-line">
       <ul class="destination-info">
         <li>
           <span><strong>Avg. distance</strong></span>
-          <span class="destination-distance">1.6 bil. km</span>
+          <span class="destination-distance" id="destination-distance-planets"></span>
         </li>
         <li>
           <span><strong>Est. travel time</strong></span>
-          <span class="destination-distance">7 years</span>
+          <span class="destination-distance" id="destination-travel"></span>
         </li>
       </ul>
       
     </div>
   </div>
   </header>
-
+  
+  <script src="./script/data.js"></script>
   <script src="./script/index.js"></script>
 </body>
 </html>
